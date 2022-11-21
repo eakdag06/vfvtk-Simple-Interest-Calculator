@@ -1,7 +1,9 @@
+<!DOCTYPE html>
 <html>
     <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <title> Simple Interest Caculator </title>
     </head>
     <body>
         <div class="main">
@@ -11,8 +13,8 @@
               <input type="text" name="amount" id="amount">
               <br><br>
               <label for="interest">Interest Rate</label>
-              <input type="range" name="interest" id="interest" value="500" min="0" max="1000" class="slider" oninput="rangeValue.innerText = this.value/10">
-              <output id="rangeValue"></output><output>%</output>
+              <input type="range" name="interest" id="interest" value="10.25" min="1" max="20" class="slider" step="0.25" oninput="updateRate()">
+              <span id="rate_val">10.25%</span>
               <br><br>
               <label for="year">No. of Years</label>
               <select name="year" id="year">
@@ -37,7 +39,7 @@
                 <p id="output4"></p><mark id="output8"></mark>
             </div>
             <div class="copyright">
-              <h3>©Everyone Can Get Rich</h3>
+              <h3>©Emir Akdag</h3>
             </div>
         </div>
     </body>
