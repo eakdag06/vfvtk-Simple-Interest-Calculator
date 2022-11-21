@@ -1,9 +1,9 @@
 var slider = document.getElementById("interest");
 var output = document.getElementById("demo");
-output.innerHTML = slider.value;
+output.innerHTML = (slider.value)/10;
 
 slider.oninput = function() {
-  output.innerHTML = this.value/10;
+  output.innerHTML = (this.value)/10;
 }
 
 function answer() {
