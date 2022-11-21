@@ -1,6 +1,6 @@
 var slider = document.getElementById("interest");
 var output = document.getElementById("demo");
-output.innerHTML = slider.value/10;
+output.innerHTML = slider.value;
 
 slider.oninput = function() {
   output.innerHTML = this.value/10;
