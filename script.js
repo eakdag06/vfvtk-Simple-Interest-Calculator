@@ -4,10 +4,6 @@ function updateRate()
     document.getElementById("rate_val").innerText=rateval;
 }
 function answer() {
-  if (g_form.getValue('amount') <= 0 || g_form.getValue('amount') == '') {
-        g_form.addErrorMessage('Fields can not be empty');
-        return false;
-    }
   var amount_input = parseInt(document.getElementById("amount").value);
   var interest_rate = parseInt(document.getElementById("interest").value);
   var time = parseInt(document.getElementById("year").value);
