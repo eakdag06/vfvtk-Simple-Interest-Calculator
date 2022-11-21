@@ -1,10 +1,5 @@
 var slider = document.getElementById("interest");
 var output = document.getElementById("demo");
-output.innerHTML = (slider.value)/10;
-
-slider.oninput = function() {
-  output.innerHTML = (this.value)/10;
-}
 
 function answer() {
   var amount_input = parseInt(document.getElementById("amount").value);
