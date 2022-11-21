@@ -7,7 +7,7 @@ function answer() {
   var amount_input = parseInt(document.getElementById("amount").value);
   var interest_rate = parseInt(document.getElementById("interest").value);
   var time = parseInt(document.getElementById("year").value);
-  var calculated = (amount_input*interest_rate*time)/100;
+  var calculated = (amount_input*(interest_rate+100)*time)/100;
   var output1 = document.getElementById("output1");
   var output2 = document.getElementById("output2");
   var output3 = document.getElementById("output3");
