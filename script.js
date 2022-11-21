@@ -1,14 +1,17 @@
-var slider = document.getElementById("interest");
-var output = document.getElementById("demo");
-
+function updateRate() 
+{
+    var rateval = document.getElementById("rate").value;
+    document.getElementById("rate_val").innerText=rateval;
+}
 function answer() {
+  if (g_form.getValue('amount') <= 0 || g_form.getValue('amount') == '') {
+        g_form.addErrorMessage('Fields can not be empty');
+        return false;
+    }
   var amount_input = parseInt(document.getElementById("amount").value);
-  var interest_rate = parseInt(document.getElementById("interest").value)/10;
+  var interest_rate = parseInt(document.getElementById("interest").value);
   var time = parseInt(document.getElementById("year").value);
   var calculated = (amount_input*(interest_rate+100)*time)/100;
-  if (interest_rate == 0) {
-    var calculated = amount_input;
-  }
   var output1 = document.getElementById("output1");
   var output2 = document.getElementById("output2");
   var output3 = document.getElementById("output3");
