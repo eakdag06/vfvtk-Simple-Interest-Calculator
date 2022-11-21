@@ -79,3 +79,6 @@ html, body {
 p {
   display:inline;
 }
+span {
+    color: black;
+}
