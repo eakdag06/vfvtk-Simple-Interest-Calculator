@@ -4,13 +4,41 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+        <div class="main">
+            <h1>Simple Interest Calculator</h1>
+            <div class="input">
+              <label for="amount">Amount</label>
+              <input type="text" name="amount" id="amount">
+              <br><br>
+              <label for="interest">Interest Rate</label>
+              <input type="range" name="interest" id="interest" value="500" min="0" max="1000" class="slider">
+              <output><span id="demo"></span>%</output>
+              <br><br>
+              <label for="year">No. of Years</label>
+              <select name="year" id="year">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <br><br>
+              <button class="compute" onclick="answer()">Compute Interest</button>
+            </div>
+            <div class="calculation">
+                <p id="output1"></p><mark id="output5"></mark> <br><br><br>
+                <p id="output2"></p><mark id="output6"></mark> <br><br><br>
+                <p id="output3"></p><mark id="output7"></mark> <br><br><br>
+                <p id="output4"></p><mark id="output8"></mark>
+            </div>
+            <div class="copyright">
+              <h3>©Everyone Can Get Rich</h3>
+            </div>
+        </div>
     </body>
 </html>
