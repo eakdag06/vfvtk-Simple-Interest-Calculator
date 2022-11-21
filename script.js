@@ -1,6 +1,6 @@
 function updateRate() 
 {
-    var rateval = document.getElementById("rate").value;
+    var rateval = document.getElementById("interest").value;
     document.getElementById("rate_val").innerText=rateval;
 }
 function answer() {
